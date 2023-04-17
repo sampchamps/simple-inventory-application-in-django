@@ -1,0 +1,1 @@
+# simple-inventory-application-in-django
