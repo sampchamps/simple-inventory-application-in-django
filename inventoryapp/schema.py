@@ -13,7 +13,7 @@ class ItemType(DjangoObjectType):
 class Query(graphene.ObjectType):
     all_items = graphene.List(ItemType)
 
-    def resolve_all_itemts(root, info):
+    def resolve_all_items(root, info):
         # We can easily optimize query count in the resolve method
         return Item.objects.all()
 
