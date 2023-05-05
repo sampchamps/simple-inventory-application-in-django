@@ -1,11 +1,7 @@
-{% block content %}
-{% for items in Item %}
+josh {% block content %} {% for items in Item %}
 <article class="post">
-    <time class="date">
-        {{ items.created_at }}
-    </time>
-    <h2><a href="">{{ items.name_item }}</a></h2>
-    <p>{{ items.text|linebreaksbr }}</p>
+  <time class="date"> {{ items.created_at }} </time>
+  <h2><a href="">{{ items.name_item }}</a></h2>
+  <p>{{ items.text|linebreaksbr }}</p>
 </article>
-{% endfor %}
-{% endblock %}
+{% endfor %} {% endblock %}

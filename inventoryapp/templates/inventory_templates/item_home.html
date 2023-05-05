@@ -1,0 +1,9 @@
+{% block content %} {% for home in homes %}
+<p>{{home.name_item}}</p>
+<p>{{home.description}}</p>
+<p>{{home.category}}</p>
+<p>{{home.quantity}}</p>
+<p>{{home.price}}</p>
+<p>{{home.created_at}}</p>
+<p>{{home.update_at}}</p>
+{% endfor %} {% endblock %}
